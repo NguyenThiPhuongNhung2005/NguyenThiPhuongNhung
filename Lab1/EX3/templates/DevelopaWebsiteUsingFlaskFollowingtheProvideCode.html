@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Sample Form</title>
+</head>
+<body>
+
+<h2>Information Student <Form></Form></h2>
+
+<form action="#" method="post">
+    <label for="username">User name</label><br>
+    <input type="text" id="Nguyen Thi Phuong Nhung" name="Nguyen Thi Phuong Nhung" /><br><br>
+
+    Gender:<br>
+    <input type="radio" id="male" name="gender" value="male" />
+    <label for="male">Male</label><br>
+
+    <input type="radio" id="female" name="gender" value="female" />
+    <label for="female">Female</label><br>
+
+    <input type="radio" id="other" name="gender" value="other" />
+    <label for="other">Other</label><br><br>
+
+    <label for="membership">Membership Level:</label><br>
+    <input list="Option" id="membership" name ="Membership" />
+    <datalist id="Option">
+        <option value="Thanh vien bac"></option>
+        <option value="Thanh vien vang"></option>
+        <option value="Thanh vien kim cuong"></option>
+    </datalist><br><br>
+
+    <label for="favcolor">Choose your favorite color:</label><br>
+    <input type="color" id="favcolor" name="favcolor" /><br><br>
+
+    <input type="checkbox" id="correct" name="correct" value="correct" />
+    <label for="correct">Correct</label><br><br>
+
+    <input type="submit" value="Submit" />
+
+</form>
+</body>
+</html>

@@ -1,12 +1,7 @@
 from flask import Flask, render_template
-
 app = Flask(__name__)
-
-@app.route("/")
+@app.route('/')
 def home():
-    x = -2
-    y = 5 * x + 7
-    return render_template("index.html", x=x, y=y)
-
+    return render_template("WebsiteDisplayingaLinearEquation.html")
 if __name__ == "__main__":
     app.run(debug=True)
