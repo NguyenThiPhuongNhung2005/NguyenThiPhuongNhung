@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Grid with Cards</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <style>
+            .card-img-top {
+                width: 100%;
+                height: 180px; 
+                object-fit: cover; 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container my-4">
+            <h2 class="mb-4 text-center">Our Featured Champions</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/maxresdefault.jpg" class="card-img-top" alt="Infernal Nasus Skin">
+                        <div class="card-body">
+                            <h5 class="card-title">Infernal Nasus</h5>
+                            <p class="card-text">
+                                Unleash the hellfire! Infernal Nasus rises from the depths, engulfed in searing flames and wielding a colossal, molten axe. Each Siphoning Strike empowers him with the very essence of the underworld, burning his foes to ash.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/Warwick_FeralSkin-1024x604.webp" class="card-img-top" alt="Warwick Skin">
+                        <div class="card-body">
+                            <h5 class="card-title">Feral Warwick</h5>
+                            <p class="card-text">
+                                Warwick fully transforms with thick fur and sharp claws, hunting his prey in the frozen wastes. His howl echoes across the tundra, signaling the arrival of a nightmare. Enemies will tremble before his speed and ferocity!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/03-lol-cosmic-blade-master-yi-splash-image.jpg" class="card-img-top" alt="Master Yi Skin">
+                        <div class="card-body">
+                            <h5 class="card-title">Cosmic Blade Master Yi</h5>
+                            <p class="card-text">
+                                Master Yi embodies a legendary swordsman, drifting through the stars with lightning-fast slashes. His rapid attacks and ultimate ability make all opponents fear his blade of justice.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
