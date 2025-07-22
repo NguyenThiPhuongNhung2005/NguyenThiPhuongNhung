@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Enter Name</title>
-</head>
-<body>
-    <form action="http://localhost:5000/result" method="POST">
-        <p>Enter Name: <input type="text" name="Name"></p>
-        <p><input type="submit" value="submit"></p>
-    </form>
-</body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Name</title>
+    </head>
+    <body>
+        <p>Enter Name:</p>
+        <input type="text" id="nameInput" placeholder="Enter your name"> <br>
+        <button onclick="displayName()">Submit</button>
+        <p id="displayName"></p>
+        <script>
+            function displayName() {
+                var name = document.getElementById("nameInput").value;
+                document.getElementById("displayName").innerText = "Welcome, " + name + "!";
+            }
+        </script>
+    </body>
 </html>
