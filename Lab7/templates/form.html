@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ student and "EDIT" or "ADD"}} student</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <h1>{{ student and "EDIT" or "ADD"}} STUDENT</h1>
+        <form method="POST">
+            <label for="name">Name:
+            <input type="text" name="name" id="name" value="{{ student.name if student else '' }}">
+            </label>
+            
+            <label for="age">Age:
+            <input type="number" name="age" id="age" value="{{ student.age if student else '' }}">
+            </label>
+
+            <label for="major">Major:
+            <input type="text" name="major" id="major" value="{{ student.major if student else '' }}">
+            </label>
+
+            <button type="submit">Save</button>
+        </form>
+        <a href="/">Back</a>
+        
+    </body>
+</html>
